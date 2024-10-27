@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to HTML Tutorial</h1>
+        <p>This is where you’ll find resources to get started with HTML.</p>
+
+        <!-- Video Tutorial Section -->
+        <section class="video-tutorial">
+            <h2>Video Tutorials</h2>
+            <iframe src="https://www.youtube.com/embed/iVCzmDwIQpA?si=2Pm-O9GxHkha8CiA" title="HTML Video Tutorial 1" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/k2DSi1zGEc8?si=XVj4VgNBsFC2jeKx" title="HTML Video Tutorial 2" allowfullscreen></iframe>
+        </section>
+        
+        <!-- Notes Section -->
+        <section class="notes-section">
+            <h2>Notes</h2>
+            <div class="notes-container">
+                <div class="note-box">
+                    <p class="note-description">W3Schools HTML Guide: A comprehensive guide to learn HTML.</p>
+                    <button class="note-button" onclick="window.open('https://www.w3schools.com/html/', '_blank')">Go to Link</button>
+                </div>
+                <div class="note-box">
+                    <p class="note-description">FreeCodeCamp Responsive Web Design: A full course on responsive web design.</p>
+                    <button class="note-button" onclick="window.open('https://www.freecodecamp.org/learn/2022/responsive-web-design/', '_blank')">Go to Link</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Button to go to the CSS tutorial page -->
+        <button onclick="navigateTo('css.html')">Go to CSS Tutorial</button>
+        
+        <p id="projectMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

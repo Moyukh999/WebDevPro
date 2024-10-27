@@ -1,0 +1,146 @@
+/* Reset default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/512/761/original/abstract-colorful-geometric-shape-background-modern-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #270f34; /* Fallback color */
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling for central alignment */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Section styling for video and notes */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Video Tutorial Section Styling */
+.video-tutorial iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 340px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Notes Section Styling */
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #51eaea;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.note-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.note-button {
+    padding: 10px 20px;
+    background-color: #51eaea;
+    color: #270f34;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-button:hover {
+    background-color: #ff9d76;
+}
+
+/* General Button Style */
+button {
+    padding: 10px 20px;
+    background-color: #FB3569;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 15px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff9d76;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1, h2 {
+        font-size: 1.2em;
+    }
+    .video-tutorial iframe {
+        max-width: 100%;
+        height: 300px;
+    }
+    .note-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1em;
+    }
+    .note-description {
+        font-size: 14px;
+    }
+    button, .note-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
